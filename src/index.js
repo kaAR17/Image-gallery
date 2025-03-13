@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './style.css';
+
 import dog1 from './assets/images/dog1.jpg';
 import dog2 from './assets/images/dog2.jpg';
 import dog3 from './assets/images/dog3.jpg';
@@ -48,6 +48,8 @@ const arr = [
 root.render(
   <div>
     <h1 style={{ textAlign: "center" }}>Image Gallery</h1>
+    <div style={{border:"solid black"}}>
+    </div>
     <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}>
       {arr.map((item, index) => (
         <Gallery key={index} image={item.image} Name={item.Name} />
